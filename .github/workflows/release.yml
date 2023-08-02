@@ -1,18 +1,13 @@
 name: Release
 
-# manual release
-on: workflow_dispatch
-
-# automatically trigger release on main branch after NodeJS workflow
-# successfully completed
-# on:
-#   workflow_run:
-#     branches:
-#       - main
-#     workflows:
-#       - NodeJS
-#     types:
-#       - completed
+on:
+  workflow_run:
+    branches:
+      - main
+    workflows:
+      - Build
+    types:
+      - completed
 
 jobs:
   release:
@@ -42,4 +37,4 @@ jobs:
           npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
