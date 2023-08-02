@@ -1,7 +1,7 @@
 {
-  "name": "proto-package",
+  "name": "@antklim/legendary-disco",
   "version": "0.1.0",
-  "description": "Template for NPM package repository",
+  "description": "Test NPM package",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antklim/proto-package.git"
+    "url": "git+https://github.com/antklim/legendary-disco.git"
   },
   "keywords": [
     "template",
@@ -26,9 +26,9 @@
   "author": "Anton Klimenko <antklim@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/antklim/proto-package/issues"
+    "url": "https://github.com/antklim/legendary-disco/issues"
   },
-  "homepage": "https://github.com/antklim/proto-package#readme",
+  "homepage": "https://github.com/antklim/legendary-disco#readme",
   "devDependencies": {
     "@tsconfig/node-lts-strictest": "^18.12.1",
     "@types/jest": "^29.5.3",
