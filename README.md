@@ -1,2 +1,2 @@
-# proto-package
-Template repository for NPM package
+# legendary-disco
+Semantic release strategies playground
