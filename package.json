@@ -1,0 +1,48 @@
+{
+  "name": "proto-package",
+  "version": "0.1.0",
+  "description": "Template for NPM package repository",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antklim/proto-package.git"
+  },
+  "keywords": [
+    "template",
+    "npm",
+    "package",
+    "nodejs"
+  ],
+  "author": "Anton Klimenko <antklim@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antklim/proto-package/issues"
+  },
+  "homepage": "https://github.com/antklim/proto-package#readme",
+  "devDependencies": {
+    "@tsconfig/node-lts-strictest": "^18.12.1",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.2",
+    "prettier": "^3.0.0",
+    "semantic-release": "^21.0.7",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
