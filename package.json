@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest --passWithNoTests",
-    "release": "semantic-release --dry-run"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
