@@ -12,3 +12,5 @@ export const pow = (a: number, b: number) => a ** b
 
 // Some comments
 export const sqrt = (a: number) => Math.sqrt(a)
+
+// Some bug fix
