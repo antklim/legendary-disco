@@ -14,3 +14,5 @@ export const pow = (a: number, b: number) => a ** b
 export const sqrt = (a: number) => Math.sqrt(a)
 
 // Some bug fix
+
+// Patch
