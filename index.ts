@@ -15,4 +15,6 @@ export const sqrt = (a: number) => Math.sqrt(a)
 
 // Some bug fix
 
+// Patch
+
 export const log = (a: number) => Math.log(a)
