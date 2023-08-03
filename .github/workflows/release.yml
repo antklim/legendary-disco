@@ -1,14 +1,10 @@
 name: Release
 
 on:
-  workflow_run:
+  push:
     branches:
       - main
       - next
-    workflows:
-      - Build
-    types:
-      - completed
 
 permissions:
   contents: write
@@ -21,7 +17,7 @@ jobs:
 
     steps:
       - name: Debug trigger event
-        run: echo "${{ toJson(github.event) }}"
+        run: echo ${{ toJson(github.event.workflow_run.head_branch) }}
 
       - name: Setup repo
         uses: actions/checkout@v3
