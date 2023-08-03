@@ -1,14 +1,6 @@
 name: Build
 
-on:
-  push:
-    branches:
-      - main
-      - next
-  pull_request:
-    branches:
-      - main
-      - next
+on: push
 
 jobs:
   lint:

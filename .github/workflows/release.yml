@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug event branch
-        run: echo ${{ github.ref }}
-
       - name: Setup repo
         uses: actions/checkout@v3
 
