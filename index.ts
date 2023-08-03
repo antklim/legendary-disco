@@ -9,3 +9,6 @@ export const div = (a: number, b: number) => a / b
 export const mod = (a: number, b: number) => a % b
 
 export const pow = (a: number, b: number) => a ** b
+
+// Some comments
+export const sqrt = (a: number) => Math.sqrt(a)
