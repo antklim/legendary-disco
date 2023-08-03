@@ -1,11 +1,12 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
-      - next
-      - '+([0-9])?(.{+([0-9]),x}).x'
+  push
+  # push:
+  #   branches:
+  #     - main
+  #     - next
+  #     - '+([0-9])?(.{+([0-9]),x}).x'
 
 permissions:
   contents: write
