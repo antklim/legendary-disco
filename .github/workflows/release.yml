@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug trigger event
-        run: echo ${{ toJson(github.event.workflow_run.head_branch) }}
+      - name: Debug event branch
+        run: echo ${{ github.ref }}
 
       - name: Setup repo
         uses: actions/checkout@v3
