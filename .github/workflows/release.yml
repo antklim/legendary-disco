@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug trigger event
+        run: echo "${{ toJson(github.event) }}"
+
       - name: Setup repo
         uses: actions/checkout@v3
 
