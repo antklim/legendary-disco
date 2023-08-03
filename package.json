@@ -48,7 +48,6 @@
     "typescript": "^5.1.6"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "tag": "latest"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
