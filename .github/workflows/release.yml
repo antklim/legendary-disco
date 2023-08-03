@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Debug trigger event
-        run: echo ${{ toJson(github.event.workflow_run.head_branch) }}
+        run: echo ${{ toJson(github.event) }}
 
       - name: Setup repo
         uses: actions/checkout@v3
