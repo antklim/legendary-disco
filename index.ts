@@ -18,7 +18,18 @@ export const ln = (a: number) => Math.log(a)
 
 export const log10 = (a: number) => Math.log10(a)
 
-// Some patches in alpha version
 export const log2 = (a: number) => Math.log2(a)
 
 export const sin = (a: number) => Math.sin(a)
+
+// some fixes that need to be tested before release
+
+// some features that need to be tested before release
+
+// foo bar feature
+
+// foo bar fix
+
+// new feature on main
+
+// other new feature
