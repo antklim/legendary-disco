@@ -3,11 +3,11 @@ name: Release
 on:
   push:
     branches:
-      - alpha             # pre-release
-      - beta              # pre-release
-      - main              # stable
-      - next              # next major version
-      - '[0-9]+.x'        # 1.x, 2.x, etc. - maintenance
+      - alpha # pre-release
+      - beta # pre-release
+      - main # stable
+      - next # next major version
+      - '[0-9]+.x' # 1.x, 2.x, etc. - maintenance
       - '[0-9]+.[0-9]+.x' # 1.2.x, 2.3.x, etc. - maintenance
 
 permissions:
@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -42,5 +44,5 @@ jobs:
           npm run build
           npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_RELEASE_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
