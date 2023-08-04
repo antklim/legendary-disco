@@ -6,6 +6,12 @@ branches:
     prerelease: true
   - name: alpha
     prerelease: true
+  - name: 'feat/*'
+    channel: 'feat-${name.replace(/^feat\//, "")}'
+    prerelease: 'feat-${name.replace(/^feat\//, "")}'
+  - name: 'feature/*'
+    channel: 'feat-${name.replace(/^feature\//, "")}'
+    prerelease: true
 
 plugins:
   - - '@semantic-release/commit-analyzer'
