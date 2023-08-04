@@ -17,3 +17,6 @@ export const log = (a: number) => Math.log(a)
 export const ln = (a: number) => Math.log(a)
 
 export const log10 = (a: number) => Math.log10(a)
+
+// Some patches in alpha version
+export const log2 = (a: number) => Math.log2(a)
