@@ -15,7 +15,9 @@ plugins:
   - - '@semantic-release/npm'
     - tarballDir: dist
   - - '@semantic-release/git'
-    - assets: 'dist/*.tgz'
+    - assets:
+        - 'dist/*.tgz'
+        - CHANGELOG.md
   # - - '@semantic-release/github'
   #   - successComment: false
   #     failComment: false
