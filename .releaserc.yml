@@ -11,14 +11,9 @@ plugins:
   - - '@semantic-release/commit-analyzer'
     - preset: 'conventionalcommits'
   - '@semantic-release/release-notes-generator'
-  - '@semantic-release/changelog'
   - - '@semantic-release/npm'
     - tarballDir: dist
-  - - '@semantic-release/git'
-    - assets:
-        - 'dist/*.tgz'
-        - CHANGELOG.md
-  # - - '@semantic-release/github'
-  #   - successComment: false
-  #     failComment: false
-  #     assets: 'dist/*.tgz'
+  - - '@semantic-release/github'
+    - successComment: false
+      failComment: false
+      assets: 'dist/*.tgz'
