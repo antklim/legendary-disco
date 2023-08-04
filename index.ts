@@ -33,5 +33,3 @@ export const sin = (a: number) => Math.sin(a)
 // new feature on main
 
 // other new feature
-
-// this is big
