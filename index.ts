@@ -21,5 +21,3 @@ export const log10 = (a: number) => Math.log10(a)
 export const log2 = (a: number) => Math.log2(a)
 
 export const sin = (a: number) => Math.sin(a)
-
-// fix
